@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: minio
+  namespace: s3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: minio
+  template:
+    metadata:
+      labels:
+        app: minio
+    spec:
+      containers:
+      - name: minio
+        image: quay.io/minio/minio:RELEASE.2023-12-23T07-19-11Z
+        args: ["server", "/data", "--console-address", ":9001"]
+        envFrom:
+          - secretRef:
+              name: minio-creds
+        ports:
+          - containerPort: 9090
+          - containerPort: 9091
+        volumeMounts:
+          - name: minio-data
+            mountPath: /data
+      volumes:
+        - name: minio-data
+          persistentVolumeClaim:
+            claimName: minio-data

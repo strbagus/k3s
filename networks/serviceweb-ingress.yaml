@@ -1,0 +1,37 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: services-net
+spec:
+  rules:
+    - host: srv.gos.my.id
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: services-web
+                port:
+                  number: 80
+          - path: /n8n
+            pathType: Prefix
+            backend:
+              service:
+                name: n8n
+                port:
+                  number: 5678
+          - path: /api/auth
+            pathType: Prefix
+            backend:
+              service:
+                name: uniauth-api
+                port:
+                  number: 8082
+          - path: /api/metrics
+            pathType: Prefix
+            backend:
+              service:
+                name: hl-metrics-api
+                port:
+                  number: 8091

@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: rustfs
+  namespace: s3
+spec:
+  serviceName: "rustfs"
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rustfs
+  template:
+    metadata:
+      labels:
+        app: rustfs
+    spec:
+      containers:
+      - name: rustfs
+        image: rustfs/rustfs:1.0.0-alpha.68
+        args:
+          - "--console-enable"
+          - "--access-key"
+          - "$(RUSTFS_ACCESS_KEY)"
+          - "--secret-key"
+          - "$(RUSTFS_SECRET_KEY)"
+          - "/data"
+        envFrom:
+          - secretRef:
+              name: rustfs-creds
+        ports:
+          - containerPort: 9000
+            name: api
+          - containerPort: 9001
+            name: console
+        volumeMounts:
+          - name: rustfs-data
+            mountPath: /data
+            subPath: data
+          - name: rustfs-data
+            mountPath: /logs
+            subPath: logs
+      volumes:
+        - name: rustfs-data
+          persistentVolumeClaim:
+            claimName: rustfs-data

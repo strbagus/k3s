@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: uniauth-api
+spec:
+  selector:
+    matchLabels:
+      app: uniauth-api
+  template:
+    metadata:
+      labels:
+        app: uniauth-api
+    spec:
+      containers:
+        - name: uniauth-container
+          image: strbagus/uniauth:1.0.6
+          env:
+            - name: JWT_SECRET 
+              value: dMK6XU6eBHMKCs73p9Gcv0PrT75MedAC
+            - name: SERVER_PORT
+              value: "8082"
+            - name: CORS_ALLOWED_ORIGIN
+              value: https://srv.gos.my.id,http://localhost:5173
+            - name: BASE_URL
+              value: /api/auth
+      imagePullSecrets:
+        - name: registry-cred

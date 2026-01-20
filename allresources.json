@@ -1,0 +1,1262 @@
+[
+  {
+    "kind": "ConfigMap",
+    "uid": "ab572166-d360-4f20-bd40-c392b1923443",
+    "namespace": "bot",
+    "name": "kube-root-ca.crt",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "ConfigMap",
+    "uid": "8a40bac7-39f0-4c7c-9859-2dbd5bbc2139",
+    "namespace": "db",
+    "name": "kube-root-ca.crt",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "ConfigMap",
+    "uid": "0c77c0e7-e9ec-45a9-9c1d-7c3eac6e78b2",
+    "namespace": "default",
+    "name": "kube-root-ca.crt",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "ConfigMap",
+    "uid": "bd916861-7ea8-4fbe-a750-2f8c8c641383",
+    "namespace": "default",
+    "name": "nginx-config",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "ConfigMap",
+    "uid": "6a52b0b5-b25c-4ea9-b6ae-10e7252bdc40",
+    "namespace": "kube-node-lease",
+    "name": "kube-root-ca.crt",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "ConfigMap",
+    "uid": "c687bdc3-13b1-43cd-aacb-e99bed7ae647",
+    "namespace": "kube-public",
+    "name": "kube-root-ca.crt",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "ConfigMap",
+    "uid": "7a9897b4-d0f0-48d2-b5e7-e66ee9893d07",
+    "namespace": "minio",
+    "name": "kube-root-ca.crt",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "ConfigMap",
+    "uid": "0514c30b-3e19-4ddd-80e8-8338fd0dbf90",
+    "namespace": "n8n",
+    "name": "kube-root-ca.crt",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  }
+]
+[
+  {
+    "kind": "Endpoints",
+    "uid": "8833eda3-1232-4c54-b785-04935dc6a875",
+    "namespace": "db",
+    "name": "mongodb",
+    "app": "mongodb",
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Endpoints",
+    "uid": "f3c3c30f-bf7b-4dfe-b382-a24e0b989b51",
+    "namespace": "db",
+    "name": "postgres",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Endpoints",
+    "uid": "7915dbf0-8e2b-42f6-b22e-23110e9ba683",
+    "namespace": "default",
+    "name": "hl-metrics",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Endpoints",
+    "uid": "217cee21-8ac3-43ec-9cd2-3e65b19887a6",
+    "namespace": "default",
+    "name": "kubernetes",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Endpoints",
+    "uid": "22e05a4a-13bc-43a9-ae2d-c0bc5b308024",
+    "namespace": "default",
+    "name": "mysrv",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Endpoints",
+    "uid": "71272a61-b8d6-4d87-a3eb-9b78e28b13c0",
+    "namespace": "default",
+    "name": "myweb",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Endpoints",
+    "uid": "e2edf4c2-c30b-48d4-b5a5-28ad2f70f793",
+    "namespace": "default",
+    "name": "uniauth",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Endpoints",
+    "uid": "3375cf07-0844-4997-b7ed-4d02fa53daed",
+    "namespace": "minio",
+    "name": "minio",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  }
+]
+[
+  {
+    "kind": "Event",
+    "uid": "3ec86c8a-aaf3-4930-b7d0-42d2b5839fdd",
+    "namespace": "db",
+    "name": "mongodb-0.18757b6b6782602d",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Event",
+    "uid": "b7256e95-8074-43f3-88e6-880fffcc351a",
+    "namespace": "db",
+    "name": "postgres-0.18757b6672f77730",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Event",
+    "uid": "c9337175-9cb6-471c-9c33-6291dd775f35",
+    "namespace": "default",
+    "name": "n8n-pvc.187579d8a9b74d5f",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Event",
+    "uid": "ff4a4fc1-145d-426d-84e5-f4363244c1fe",
+    "namespace": "n8n",
+    "name": "n8n-pvc.187579e97782d3d2",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  }
+]
+[
+  {
+    "kind": "PersistentVolumeClaim",
+    "uid": "294e1f4f-2f7e-438b-bd74-1ce338776a6c",
+    "namespace": "db",
+    "name": "mongodb-storage-mongodb-0",
+    "app": "mongodb",
+    "ref": null,
+    "status": "Bound",
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "PersistentVolumeClaim",
+    "uid": "15fdd78a-7659-4c90-b512-d1d67fcdfbf2",
+    "namespace": "db",
+    "name": "postgres-storage-postgres-0",
+    "app": "postgres",
+    "ref": null,
+    "status": "Bound",
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "PersistentVolumeClaim",
+    "uid": "9ad379c4-443f-49c0-b045-351f4687fb3f",
+    "namespace": "default",
+    "name": "n8n-pvc",
+    "app": null,
+    "ref": null,
+    "status": "Bound",
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "PersistentVolumeClaim",
+    "uid": "e29bb729-8dc3-498a-ba94-447d93a7e701",
+    "namespace": "default",
+    "name": "staticweb-pvc",
+    "app": null,
+    "ref": null,
+    "status": "Bound",
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "PersistentVolumeClaim",
+    "uid": "c99a32d5-0654-40a1-8595-8a42c999f8ad",
+    "namespace": "n8n",
+    "name": "n8n-pvc",
+    "app": null,
+    "ref": null,
+    "status": "Pending",
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  }
+]
+[
+  {
+    "kind": "Pod",
+    "uid": "613a228d-17fc-4e3c-b211-6567d7251e2c",
+    "namespace": "default",
+    "name": "mysrv-84957948c9-frbnp",
+    "app": "mysrv",
+    "ref": [
+      {
+        "apiVersion": "apps/v1",
+        "blockOwnerDeletion": true,
+        "controller": true,
+        "kind": "ReplicaSet",
+        "name": "mysrv-84957948c9",
+        "uid": "3bc19d78-78c9-43fa-8548-43cc58452754"
+      }
+    ],
+    "status": "Running",
+    "node": "stb2",
+    "subdomain": null,
+    "host": null,
+    "priority": 0,
+    "host_ip": "192.168.99.116"
+  },
+  {
+    "kind": "Pod",
+    "uid": "8dab0b88-3e0b-4a46-b65a-49ee4e7ed831",
+    "namespace": "default",
+    "name": "myweb-5555984d84-lkcmg",
+    "app": "myweb",
+    "ref": [
+      {
+        "apiVersion": "apps/v1",
+        "blockOwnerDeletion": true,
+        "controller": true,
+        "kind": "ReplicaSet",
+        "name": "myweb-5555984d84",
+        "uid": "68b91b3f-7438-47a6-a5f9-d92fdea1cb2a"
+      }
+    ],
+    "status": "Running",
+    "node": "stb3",
+    "subdomain": null,
+    "host": null,
+    "priority": 0,
+    "host_ip": "192.168.99.114"
+  },
+  {
+    "kind": "Pod",
+    "uid": "877e05a8-5821-4794-af61-2ebf417e19e2",
+    "namespace": "default",
+    "name": "uniauth-55dbc4cdc6-g9jnf",
+    "app": "uniauth",
+    "ref": [
+      {
+        "apiVersion": "apps/v1",
+        "blockOwnerDeletion": true,
+        "controller": true,
+        "kind": "ReplicaSet",
+        "name": "uniauth-55dbc4cdc6",
+        "uid": "8a9b5b25-00d8-482e-83cd-d9426ba1437e"
+      }
+    ],
+    "status": "Running",
+    "node": "stb2",
+    "subdomain": null,
+    "host": null,
+    "priority": 0,
+    "host_ip": "192.168.99.116"
+  },
+  {
+    "kind": "Pod",
+    "uid": "e44a826e-eaa7-42f6-bc39-b78962f728ee",
+    "namespace": "minio",
+    "name": "minio",
+    "app": "minio-dev",
+    "ref": null,
+    "status": "Running",
+    "node": "stb3",
+    "subdomain": null,
+    "host": null,
+    "priority": 0,
+    "host_ip": "192.168.99.114"
+  }
+]
+[
+  {
+    "kind": "Secret",
+    "uid": "4f4243e8-101d-498a-bca0-d20ceb67b911",
+    "namespace": "db",
+    "name": "mongodb-secret",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Secret",
+    "uid": "85cda1a8-e306-43f0-b8f1-4eb09b02800c",
+    "namespace": "default",
+    "name": "regcred",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Secret",
+    "uid": "3cd10dcc-ab2d-4ad8-a52e-d1046da4fa94",
+    "namespace": "minio",
+    "name": "minio-creds",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  }
+]
+[
+  {
+    "kind": "ServiceAccount",
+    "uid": "201abad7-9328-4531-b166-f0c4b0df8971",
+    "namespace": "bot",
+    "name": "default",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "ServiceAccount",
+    "uid": "5d48cf44-7ba0-4e1a-bdb8-35f39285c56f",
+    "namespace": "db",
+    "name": "default",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "ServiceAccount",
+    "uid": "e0cc9cf2-4164-431d-8f98-adc4fef8b030",
+    "namespace": "default",
+    "name": "default",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "ServiceAccount",
+    "uid": "b86b9467-3565-4e04-9b56-51fd44efdfe6",
+    "namespace": "kube-node-lease",
+    "name": "default",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "ServiceAccount",
+    "uid": "608840e8-f706-4620-80cc-7a04eace60dc",
+    "namespace": "kube-public",
+    "name": "default",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "ServiceAccount",
+    "uid": "b46f8b0e-16f0-40e5-a6cf-e584a5e8e8ae",
+    "namespace": "minio",
+    "name": "default",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "ServiceAccount",
+    "uid": "f1bb64d9-0107-4411-9b25-1558d4eb054b",
+    "namespace": "n8n",
+    "name": "default",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  }
+]
+[
+  {
+    "kind": "Service",
+    "uid": "3606c5b3-2de4-4d4e-8b0d-e76a4b2625aa",
+    "namespace": "db",
+    "name": "mongodb",
+    "app": "mongodb",
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Service",
+    "uid": "7932713d-bbda-4848-8a26-a57610341a4c",
+    "namespace": "db",
+    "name": "postgres",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Service",
+    "uid": "b058e086-fc4b-431f-bb6a-9fe33c70121c",
+    "namespace": "default",
+    "name": "hl-metrics",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Service",
+    "uid": "d855f1b8-1b31-4f4c-9966-e01d397d3437",
+    "namespace": "default",
+    "name": "kubernetes",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Service",
+    "uid": "6e636732-3ba6-4c04-9fc2-d25170eebc6d",
+    "namespace": "default",
+    "name": "mysrv",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Service",
+    "uid": "c437c68b-cb88-475d-bf20-955d3415618f",
+    "namespace": "default",
+    "name": "myweb",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Service",
+    "uid": "3ff68d7a-7cfe-48e4-8630-01fe0e645b47",
+    "namespace": "default",
+    "name": "uniauth",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Service",
+    "uid": "54862d70-0905-4e7e-bb42-f1c7ce0bf469",
+    "namespace": "minio",
+    "name": "minio",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  }
+]
+[]
+[]
+[
+  {
+    "kind": "Deployment",
+    "uid": "885841c2-9968-4aaf-982d-a49cf12174da",
+    "namespace": "default",
+    "name": "mysrv",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Deployment",
+    "uid": "77c94bac-81c5-4983-b51e-7aa379cd30e6",
+    "namespace": "default",
+    "name": "myweb",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Deployment",
+    "uid": "8aad969d-a68b-413e-994a-87098c551774",
+    "namespace": "default",
+    "name": "uniauth",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  }
+]
+[
+  {
+    "kind": "ReplicaSet",
+    "uid": "3bc19d78-78c9-43fa-8548-43cc58452754",
+    "namespace": "default",
+    "name": "mysrv-84957948c9",
+    "app": "mysrv",
+    "ref": [
+      {
+        "apiVersion": "apps/v1",
+        "blockOwnerDeletion": true,
+        "controller": true,
+        "kind": "Deployment",
+        "name": "mysrv",
+        "uid": "885841c2-9968-4aaf-982d-a49cf12174da"
+      }
+    ],
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "ReplicaSet",
+    "uid": "68b91b3f-7438-47a6-a5f9-d92fdea1cb2a",
+    "namespace": "default",
+    "name": "myweb-5555984d84",
+    "app": "myweb",
+    "ref": [
+      {
+        "apiVersion": "apps/v1",
+        "blockOwnerDeletion": true,
+        "controller": true,
+        "kind": "Deployment",
+        "name": "myweb",
+        "uid": "77c94bac-81c5-4983-b51e-7aa379cd30e6"
+      }
+    ],
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "ReplicaSet",
+    "uid": "8a9b5b25-00d8-482e-83cd-d9426ba1437e",
+    "namespace": "default",
+    "name": "uniauth-55dbc4cdc6",
+    "app": "uniauth",
+    "ref": [
+      {
+        "apiVersion": "apps/v1",
+        "blockOwnerDeletion": true,
+        "controller": true,
+        "kind": "Deployment",
+        "name": "uniauth",
+        "uid": "8aad969d-a68b-413e-994a-87098c551774"
+      }
+    ],
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  }
+]
+[]
+[
+  {
+    "kind": "Lease",
+    "uid": "399cbdd8-3a65-4ed3-a953-63c8ef066d74",
+    "namespace": "kube-node-lease",
+    "name": "raspberrypi",
+    "app": null,
+    "ref": [
+      {
+        "apiVersion": "v1",
+        "kind": "Node",
+        "name": "raspberrypi",
+        "uid": "46e594de-86c5-45b3-aa10-95ef6796bf3b"
+      }
+    ],
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Lease",
+    "uid": "b56fc25c-b566-462f-853f-3a7a526fcfcc",
+    "namespace": "kube-node-lease",
+    "name": "stb1",
+    "app": null,
+    "ref": [
+      {
+        "apiVersion": "v1",
+        "kind": "Node",
+        "name": "stb1",
+        "uid": "c9189837-c577-4205-8d36-ad1bc3809729"
+      }
+    ],
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Lease",
+    "uid": "0d3c9e56-eaff-4312-836e-0d41a82e345b",
+    "namespace": "kube-node-lease",
+    "name": "stb2",
+    "app": null,
+    "ref": [
+      {
+        "apiVersion": "v1",
+        "kind": "Node",
+        "name": "stb2",
+        "uid": "bb342b2e-278f-44c5-af58-bed6543fc58c"
+      }
+    ],
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Lease",
+    "uid": "73b78a18-b2eb-4e21-97ca-615fcfb9fdb5",
+    "namespace": "kube-node-lease",
+    "name": "stb3",
+    "app": null,
+    "ref": [
+      {
+        "apiVersion": "v1",
+        "kind": "Node",
+        "name": "stb3",
+        "uid": "34571a86-dee8-4091-9917-0a7633a66548"
+      }
+    ],
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  }
+]
+[
+  {
+    "kind": "EndpointSlice",
+    "uid": "6791c311-e809-496a-8dff-64f733318208",
+    "namespace": "db",
+    "name": "mongodb-qf4ln",
+    "app": "mongodb",
+    "ref": [
+      {
+        "apiVersion": "v1",
+        "blockOwnerDeletion": true,
+        "controller": true,
+        "kind": "Service",
+        "name": "mongodb",
+        "uid": "3606c5b3-2de4-4d4e-8b0d-e76a4b2625aa"
+      }
+    ],
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "EndpointSlice",
+    "uid": "e50daf31-34cc-422e-9316-a774bdb92997",
+    "namespace": "db",
+    "name": "postgres-7lcsg",
+    "app": null,
+    "ref": [
+      {
+        "apiVersion": "v1",
+        "blockOwnerDeletion": true,
+        "controller": true,
+        "kind": "Service",
+        "name": "postgres",
+        "uid": "7932713d-bbda-4848-8a26-a57610341a4c"
+      }
+    ],
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "EndpointSlice",
+    "uid": "8cc6605e-7d00-4f3d-bf5d-ac8510c3aa2a",
+    "namespace": "default",
+    "name": "hl-metrics-kv9lp",
+    "app": null,
+    "ref": [
+      {
+        "apiVersion": "v1",
+        "blockOwnerDeletion": true,
+        "controller": true,
+        "kind": "Endpoints",
+        "name": "hl-metrics",
+        "uid": "7915dbf0-8e2b-42f6-b22e-23110e9ba683"
+      }
+    ],
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "EndpointSlice",
+    "uid": "1d239069-8298-45bb-a9dd-d987f7233bd3",
+    "namespace": "default",
+    "name": "kubernetes",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "EndpointSlice",
+    "uid": "80648bc7-4c10-4922-a716-cc3bcaefd6ba",
+    "namespace": "default",
+    "name": "mysrv-kk6n4",
+    "app": null,
+    "ref": [
+      {
+        "apiVersion": "v1",
+        "blockOwnerDeletion": true,
+        "controller": true,
+        "kind": "Service",
+        "name": "mysrv",
+        "uid": "6e636732-3ba6-4c04-9fc2-d25170eebc6d"
+      }
+    ],
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "EndpointSlice",
+    "uid": "0dca2640-e95e-4537-adb0-f864ea0c2c58",
+    "namespace": "default",
+    "name": "myweb-z95rh",
+    "app": null,
+    "ref": [
+      {
+        "apiVersion": "v1",
+        "blockOwnerDeletion": true,
+        "controller": true,
+        "kind": "Service",
+        "name": "myweb",
+        "uid": "c437c68b-cb88-475d-bf20-955d3415618f"
+      }
+    ],
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "EndpointSlice",
+    "uid": "3bcbbf03-7433-4a26-898f-f84d54e8afc9",
+    "namespace": "default",
+    "name": "uniauth-mnk6z",
+    "app": null,
+    "ref": [
+      {
+        "apiVersion": "v1",
+        "blockOwnerDeletion": true,
+        "controller": true,
+        "kind": "Service",
+        "name": "uniauth",
+        "uid": "3ff68d7a-7cfe-48e4-8630-01fe0e645b47"
+      }
+    ],
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "EndpointSlice",
+    "uid": "dbfb0c8d-35d7-4a99-9d96-9b2b99051a0c",
+    "namespace": "minio",
+    "name": "minio-pfn4m",
+    "app": null,
+    "ref": [
+      {
+        "apiVersion": "v1",
+        "blockOwnerDeletion": true,
+        "controller": true,
+        "kind": "Service",
+        "name": "minio",
+        "uid": "54862d70-0905-4e7e-bb42-f1c7ce0bf469"
+      }
+    ],
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  }
+]
+[
+  {
+    "kind": "Event",
+    "uid": "3ec86c8a-aaf3-4930-b7d0-42d2b5839fdd",
+    "namespace": "db",
+    "name": "mongodb-0.18757b6b6782602d",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Event",
+    "uid": "b7256e95-8074-43f3-88e6-880fffcc351a",
+    "namespace": "db",
+    "name": "postgres-0.18757b6672f77730",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Event",
+    "uid": "c9337175-9cb6-471c-9c33-6291dd775f35",
+    "namespace": "default",
+    "name": "n8n-pvc.187579d8a9b74d5f",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Event",
+    "uid": "ff4a4fc1-145d-426d-84e5-f4363244c1fe",
+    "namespace": "n8n",
+    "name": "n8n-pvc.187579e97782d3d2",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  }
+]
+[]
+[]
+[
+  {
+    "kind": "PodMetrics",
+    "uid": null,
+    "namespace": "default",
+    "name": "mysrv-84957948c9-frbnp",
+    "app": "mysrv",
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "PodMetrics",
+    "uid": null,
+    "namespace": "default",
+    "name": "myweb-5555984d84-lkcmg",
+    "app": "myweb",
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "PodMetrics",
+    "uid": null,
+    "namespace": "default",
+    "name": "uniauth-55dbc4cdc6-g9jnf",
+    "app": "uniauth",
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "PodMetrics",
+    "uid": null,
+    "namespace": "minio",
+    "name": "minio",
+    "app": "minio-dev",
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  }
+]
+[
+  {
+    "kind": "Ingress",
+    "uid": "ee5d5a20-2300-4a17-9f8a-52f9ee8c6634",
+    "namespace": "default",
+    "name": "myweb",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  },
+  {
+    "kind": "Ingress",
+    "uid": "976044ad-40bf-4d48-a243-11d4e9fbde97",
+    "namespace": "default",
+    "name": "srv-page",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  }
+]
+[
+  {
+    "kind": "RoleBinding",
+    "uid": "9c3cf6df-508b-48ae-acad-f799d8718509",
+    "namespace": "kube-public",
+    "name": "system:controller:bootstrap-signer",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  }
+]
+[
+  {
+    "kind": "Role",
+    "uid": "a323395b-3071-427a-bafe-6945cdce27a9",
+    "namespace": "kube-public",
+    "name": "system:controller:bootstrap-signer",
+    "app": null,
+    "ref": null,
+    "status": null,
+    "node": null,
+    "subdomain": null,
+    "host": null,
+    "priority": null,
+    "host_ip": null
+  }
+]

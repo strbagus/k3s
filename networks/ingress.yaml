@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: secmyweb
+spec:
+  rules:
+    - host: s3.gos.my.id
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: myweb
+                port:
+                  number: 80
+

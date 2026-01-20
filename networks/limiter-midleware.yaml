@@ -1,0 +1,10 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: rate-limit-10rps
+  namespace: default
+spec:
+  rateLimit:
+    average: 10        # allowed requests per second (RPS)
+    burst: 5          # extra allowed in short burst
+

@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: minio-conf
+  namespace: s3
+  annotations:
+    traefik.ingress.kubernetes.io/rewrite-target: /$1
+spec:
+  rules:
+    - host: s3.gos.my.id
+      http:
+        paths:
+          - path: /ui/(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: minio
+                port:
+                  number: 9001
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: minio
+                port:
+                  number: 9000
