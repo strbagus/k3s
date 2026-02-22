@@ -4,7 +4,7 @@ metadata:
   name: personal-net
 spec:
   rules:
-    - host: gos.my.id
+    - host: strbagus.my.id
       http:
         paths:
           - path: /
