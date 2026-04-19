@@ -4,6 +4,7 @@ metadata:
   name: rustfs
   namespace: s3
 spec:
+  serviceName: "rustfs"
   replicas: 1
   selector:
     matchLabels:
@@ -14,29 +15,26 @@ spec:
         app: rustfs
     spec:
       containers:
-      - name: rustfs
-        image: rustfs/rustfs:1.0.0-alpha.68
-        args:
-          - "--address"
-          - "$(RUSTFS_ADDRESS)"
-          - "--console-enable"
-          - "$(RUSTFS_CONSOLE_ENABLE)"
-          - "--server-domains"
-          - "$(RUSTFS_SERVER_DOMAINS)"
-          - "--access-key"
-          - "$(RUSTFS_ACCESS_KEY)"
-          - "--secret-key"
-          - "$(RUSTFS_SECRET_KEY)"
-          - "/data"
-        envFrom:
-          - secretRef:
-              name: rustfs-creds
-        ports:
-          - containerPort: 9000
-          - containerPort: 9001
-        volumeMounts:
-          - name: rustfs-data
-            mountPath: /data
+        - name: rustfs
+          image: rustfs/rustfs:1.0.0-alpha.94
+          securityContext:
+            runAsUser: 0
+          command: ["/bin/sh", "-c"]
+          args:
+            - >
+              rustfs
+              --console-enable
+              --address "$RUSTFS_ADDRESS"
+              --server-domains "$RUSTFS_SERVER_DOMAINS"
+              --access-key "$RUSTFS_ACCESS_KEY"
+              --secret-key "$RUSTFS_SECRET_KEY"
+              /data
+          envFrom:
+            - secretRef:
+                name: rustfs-creds
+          volumeMounts:
+            - name: rustfs-data
+              mountPath: /data
       volumes:
         - name: rustfs-data
           persistentVolumeClaim:

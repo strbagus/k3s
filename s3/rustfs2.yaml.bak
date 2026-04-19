@@ -16,9 +16,13 @@ spec:
     spec:
       containers:
       - name: rustfs
-        image: rustfs/rustfs:1.0.0-alpha.68
+        image: rustfs/rustfs:1.0.0-alpha.94
         args:
           - "--console-enable"
+          - "--address"
+          - "$(RUSTFS_ADDRESS)"
+          - "--server-domains"
+          - "$(RUSTFS_SERVER_DOMAINS)"
           - "--access-key"
           - "$(RUSTFS_ACCESS_KEY)"
           - "--secret-key"
