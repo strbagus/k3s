@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: personal-net
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+    nginx.ingress.kubernetes.io/use-regex: "true"
+spec:
+  rules:
+    - host: strbagus.my.id
+      http:
+        paths:
+          - path: /svc(/|$)(.*)
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: services-web
+                port:
+                  number: 80

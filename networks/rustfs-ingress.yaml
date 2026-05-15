@@ -5,7 +5,7 @@ metadata:
   namespace: s3
 spec:
   rules:
-    - host: s3.gos.my.id
+    - host: s3.strbagus.my.id
       http:
         paths:
           - path: /
