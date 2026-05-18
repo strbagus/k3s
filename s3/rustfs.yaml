@@ -14,28 +14,52 @@ spec:
       labels:
         app: rustfs
     spec:
+      securityContext:
+        runAsUser: 1000
+        runAsGroup: 1000
+        fsGroup: 1000
       containers:
         - name: rustfs
-          image: rustfs/rustfs:1.0.0-alpha.94
-          securityContext:
-            runAsUser: 0
+          image: rustfs/rustfs:1.0.0-beta.3
           command: ["/bin/sh", "-c"]
           args:
             - >
               rustfs
               --console-enable
-              --address "$RUSTFS_ADDRESS"
-              --server-domains "$RUSTFS_SERVER_DOMAINS"
-              --access-key "$RUSTFS_ACCESS_KEY"
-              --secret-key "$RUSTFS_SECRET_KEY"
               /data
+          env:
+            # 1. API and Web Console Networking Configuration
+            - name: RUSTFS_ADDRESS
+              value: "0.0.0.0:9000"
+            - name: RUSTFS_CONSOLE_ADDRESS
+              value: "0.0.0.0:9001"
+            - name: RUSTFS_SERVER_DOMAINS
+              value: "s3.strbagus.my.id"
+              
+            # 2. Forcing Path Style Endpoint Configuration
+            - name: RUSTFS_S3_PATH_STYLE
+              value: "true"
+              
+            # 3. Observability Logging Directory override
+            - name: RUSTFS_OBS_LOG_DIRECTORY
+              value: "/logs"
           envFrom:
             - secretRef:
                 name: rustfs-creds
           volumeMounts:
             - name: rustfs-data
               mountPath: /data
+            - name: log-dir
+              mountPath: /logs
+          ports:
+            - containerPort: 9000
+              name: api
+            - containerPort: 9001
+              name: console
       volumes:
         - name: rustfs-data
           persistentVolumeClaim:
             claimName: rustfs-data
+        - name: log-dir
+          emptyDir:
+            medium: Memory

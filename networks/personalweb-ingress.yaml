@@ -31,6 +31,13 @@ spec:
                 name: uniauth-api
                 port:
                   number: 8082
+          - path: /api/gallery
+            pathType: Prefix
+            backend:
+              service:
+                name: hl-gallery-api
+                port:
+                  number: 8083
           - path: /api/metrics
             pathType: Prefix
             backend:
