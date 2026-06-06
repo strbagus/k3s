@@ -6,6 +6,6 @@ spec:
   selector:
     app: uniauth-api
   ports:
-    - port: 8082
-      targetPort: 8082
+    - port: 8051
+      targetPort: 8051
   type: ClusterIP

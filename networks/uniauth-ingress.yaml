@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: uniauth-net
+spec:
+  rules:
+    - host: auth.strbagus.my.id
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: uniauth-api
+                port:
+                  number: 8051

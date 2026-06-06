@@ -13,15 +13,26 @@ spec:
     spec:
       containers:
         - name: uniauth-container
-          image: strbagus/uniauth:1.0.6
+          image: strbagus/uniauth:2.0.2
           env:
-            - name: JWT_SECRET 
-              value: dMK6XU6eBHMKCs73p9Gcv0PrT75MedAC
+            - name: APP_DOMAIN
+              value: strbagus.my.id
             - name: SERVER_PORT
-              value: "8082"
-            - name: CORS_ALLOWED_ORIGIN
-              value: https://srv.gos.my.id,http://localhost:5173
+              value: "8051"
             - name: BASE_URL
-              value: /api/auth
+              value: /
+            - name: JWKS_KID
+              value: xBm249Cm6asZ3IVdoNv3wti3YqXKY4GV
+          volumeMounts:
+            - name: staticweb
+              mountPath: /app/etc
+              subPath: uniauth/etc
+            - name: staticweb
+              mountPath: /app/static
+              subPath: uniauth/static
       imagePullSecrets:
         - name: registry-cred
+      volumes:
+        - name: staticweb
+          persistentVolumeClaim:
+            claimName: staticweb-data
